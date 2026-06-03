@@ -261,22 +261,6 @@ const LandingPage = () => {
               <p className="theme-footer-muted">Forge Smarter Links. Track Every Click.</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 theme-footer-muted">
-                <li><Link to="#" className="footer-link">Features</Link></li>
-                <li><Link to="#" className="footer-link">Pricing</Link></li>
-                <li><Link to="#" className="footer-link">API</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 theme-footer-muted">
-                <li><Link to="#" className="footer-link">About</Link></li>
-                <li><Link to="#" className="footer-link">Blog</Link></li>
-                <li><Link to="#" className="footer-link">Careers</Link></li>
-              </ul>
-            </div>
-            <div>
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 theme-footer-muted">
                 <li><Link to="#" className="footer-link">Privacy</Link></li>
@@ -286,7 +270,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t pt-8 text-center theme-footer-muted" style={{ borderColor: 'color-mix(in srgb, var(--footer-muted) 40%, transparent)' }}>
-            <p>&copy; 2024 LinkForge. All rights reserved.</p>
+            <p>&copy; 2026 LinkForge. All rights reserved.</p>
             <p className="mt-2 text-sm">This project is a part of a hackathon run by https://katomaran.com</p>
           </div>
         </div>
