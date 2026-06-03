@@ -260,14 +260,7 @@ const LandingPage = () => {
               </div>
               <p className="theme-footer-muted">Forge Smarter Links. Track Every Click.</p>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 theme-footer-muted">
-                <li><Link to="#" className="footer-link">Privacy</Link></li>
-                <li><Link to="#" className="footer-link">Terms</Link></li>
-                <li><Link to="#" className="footer-link">Security</Link></li>
-              </ul>
-            </div>
+            
           </div>
           <div className="border-t pt-8 text-center theme-footer-muted" style={{ borderColor: 'color-mix(in srgb, var(--footer-muted) 40%, transparent)' }}>
             <p>&copy; 2026 LinkForge. All rights reserved.</p>
