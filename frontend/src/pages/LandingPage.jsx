@@ -10,7 +10,15 @@ import {
   ArrowRight,
   Sparkles,
   CheckCircle2,
-  QrCode
+  QrCode,
+  UserCheck,
+  Lock,
+  CalendarDays,
+  Layers,
+  FileSpreadsheet,
+  Users,
+  TrendingUp,
+  LineChart
 } from 'lucide-react';
 import AnimatedButton from '../components/AnimatedButton';
 import AnimatedCard from '../components/AnimatedCard';
@@ -21,29 +29,64 @@ import LinkForgeLogo from '../components/LinkForgeLogo';
 const LandingPage = () => {
   const features = [
     {
+      icon: UserCheck,
+      title: 'User Authentication',
+      description: 'Secure signup, login, and protected dashboard access using JWT authentication.'
+    },
+    {
       icon: Link2,
-      title: 'Smart Shortening',
-      description: 'Create short, memorable links with custom aliases for your brand.'
+      title: 'Smart URL Shortening',
+      description: 'Generate short links instantly with support for custom aliases.'
+    },
+    {
+      icon: Lock,
+      title: 'Password-Protected Links',
+      description: 'Restrict access to links using passwords for additional security.'
+    },
+    {
+      icon: CalendarDays,
+      title: 'Start & Expiry Dates',
+      description: 'Schedule when links become active and automatically expire.'
+    },
+    {
+      icon: Layers,
+      title: 'Bulk URL Creation',
+      description: 'Create multiple short URLs at once using bulk generation.'
+    },
+    {
+      icon: FileSpreadsheet,
+      title: 'CSV Upload Support',
+      description: 'Upload a CSV file and generate short links in bulk.'
+    },
+    {
+      icon: QrCode,
+      title: 'QR Code Generation',
+      description: 'Generate QR codes for every shortened link.'
     },
     {
       icon: BarChart3,
       title: 'Advanced Analytics',
-      description: 'Track clicks, devices, locations, and referrers in real-time.'
+      description: 'Track clicks, engagement, and link performance.'
     },
     {
-      icon: Shield,
-      title: 'Secure & Reliable',
-      description: 'Enterprise-grade security with HTTPS and data encryption.'
-    },
-    {
-      icon: Zap,
-      title: 'Lightning Fast',
-      description: 'Instant redirects with global CDN for maximum speed.'
+      icon: Globe,
+      title: 'Browser Analytics',
+      description: 'View visitor browser statistics.'
     },
     {
       icon: Smartphone,
       title: 'Device Analytics',
-      description: 'Understand your audience with detailed device and browser insights.'
+      description: 'Analyze desktop, mobile, and tablet traffic.'
+    },
+    {
+      icon: Users,
+      title: 'Referrer Analytics',
+      description: 'Identify where visitors are coming from.'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Trends Dashboard',
+      description: 'Visualize usage trends and activity insights.'
     }
   ];
 
@@ -187,17 +230,36 @@ const LandingPage = () => {
             <p className="theme-text-secondary text-lg">Everything you need to manage your links</p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <AnimatedCard key={index} delay={index * 0.08} className="premium-card hover:-translate-y-1 transition-transform">
+              <AnimatedCard key={index} delay={index * 0.05} className="premium-card hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 flex flex-col h-full">
                 <div className="w-12 h-12 rounded-xl feature-icon-wrap flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 theme-text-primary">{feature.title}</h3>
-                <p className="theme-text-secondary">{feature.description}</p>
+                <h3 className="text-lg font-semibold mb-2 theme-text-primary">{feature.title}</h3>
+                <p className="theme-text-secondary text-sm flex-grow">{feature.description}</p>
               </AnimatedCard>
             ))}
           </div>
+
+          {/* Tech Stack Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <p className="theme-text-secondary text-sm max-w-3xl mx-auto leading-relaxed">
+              Built with <span className="font-semibold theme-text-primary">React</span>,{' '}
+              <span className="font-semibold theme-text-primary">Node.js</span>,{' '}
+              <span className="font-semibold theme-text-primary">Express</span>,{' '}
+              <span className="font-semibold theme-text-primary">MongoDB Atlas</span>,{' '}
+              <span className="font-semibold theme-text-primary">JWT Authentication</span>,{' '}
+              <span className="font-semibold theme-text-primary">Analytics Tracking</span>,{' '}
+              <span className="font-semibold theme-text-primary">CSV Processing</span>, and{' '}
+              <span className="font-semibold theme-text-primary">QR Generation</span>.
+            </p>
+          </motion.div>
         </div>
       </section>
 
