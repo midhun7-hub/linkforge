@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" data-theme="gold">
+  <head>
+    <script>
+      try {
+        var themes = ['light', 'dark', 'midnight', 'emerald', 'purple', 'sunset', 'rose', 'gold'];
+        var t = localStorage.getItem('linkforge-theme');
+        document.documentElement.setAttribute('data-theme', themes.indexOf(t) >= 0 ? t : 'gold');
+      } catch (e) {}
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/linkforge-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkForge | Smart URL Shortener</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

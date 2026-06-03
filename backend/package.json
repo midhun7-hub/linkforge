@@ -1,0 +1,34 @@
+{
+  "name": "linkforge-backend",
+  "version": "1.0.0",
+  "description": "LinkForge Backend - URL Shortener Platform",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["url-shortener", "analytics", "linkforge"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "dotenv": "^16.3.1",
+    "nanoid": "^5.0.4",
+    "ua-parser-js": "^1.0.37",
+    "qrcode": "^1.5.3",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "xss-clean": "^0.1.1",
+    "axios": "^1.6.2"
+  }
+}
