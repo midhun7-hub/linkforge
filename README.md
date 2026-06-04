@@ -541,43 +541,6 @@ Error responses:
 
 ---
 
-## 📸 Screenshots
-
-### Landing Page
-![Landing Page](https://via.placeholder.com/1200x800/667eea/ffffff?text=LinkForge+Landing+Page)
-
-*Hero section with call-to-action and feature highlights.*
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/1200x800/667eea/ffffff?text=Dashboard)
-
-*Main dashboard showing all created links with click counts, short codes, and management actions.*
-
-### Analytics
-![Analytics](https://via.placeholder.com/1200x800/667eea/ffffff?text=Analytics)
-
-*Comprehensive analytics view with hero metrics, click trend line chart, device/browser pie charts, country breakdown, and activity timeline.*
-
-### Bulk Upload
-![Bulk Upload](https://via.placeholder.com/1200x800/667eea/ffffff?text=Bulk+Upload)
-
-*CSV upload interface with validation summary, URL preview table, and results export.*
-
-### Settings
-![Settings](https://via.placeholder.com/1200x800/667eea/ffffff?text=Settings)
-
-*User settings page with password change and account management.*
-
----
-
-## 🎥 Demo Video
-
-[[LinkForge Demo Video]](https://placeholder.link/video-url)
-
-*A walkthrough covering: registration, creating a short link, custom aliases, password protection, viewing analytics, bulk CSV upload, and mobile responsiveness.*
-
----
-
 ## 🔮 Future Improvements
 
 - [ ] **Team & Workspaces**: Multi-user collaboration with role-based access control (RBAC)
