@@ -9,6 +9,20 @@ A modern, production-ready URL shortening and analytics platform built with a fu
 
 ---
 
+## Live Demo & Project Walkthrough
+
+### Live Demo
+
+[https://linkforge-umber.vercel.app](https://linkforge-umber.vercel.app)
+
+### Project Walkthrough Video
+
+[https://youtu.be/qJI_QUy7u3M?si=tOxevfpfd4id4UD3](https://youtu.be/qJI_QUy7u3M?si=tOxevfpfd4id4UD3)
+
+"LinkForge is a full-stack URL shortening platform with analytics, custom aliases, QR code generation, password-protected links, bulk URL creation, expiry controls, theme customization, and an interactive dashboard."
+
+---
+
 ## 📋 Table of Contents
 
 - [Project Overview](#-project-overview)

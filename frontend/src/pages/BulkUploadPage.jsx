@@ -42,8 +42,8 @@ const BulkUploadPage = () => {
     const invalid = [];
 
     for (const row of rawCsvData) {
-      // Support url or longUrl column
-      const originalUrl = row.url || row.longurl || row.originalurl || '';
+      // Support url, longUrl, or originalUrl column (including underscore variants)
+      const originalUrl = row.url || row.longurl || row.originalurl || row.original_url || row.long_url || '';
       const trimmedUrl = originalUrl.trim();
 
       // Skip empty rows
@@ -106,7 +106,8 @@ const BulkUploadPage = () => {
         return;
       }
 
-      const headers = lines[0].split(',').map(h => h.trim().toLowerCase());
+      // Strip UTF-8 BOM from first header if present
+      const headers = lines[0].replace(/^\ufeff/, '').split(',').map(h => h.trim().toLowerCase());
       const data = lines.slice(1).map(line => {
         const values = line.split(',').map(v => v.trim());
         const obj = {};
