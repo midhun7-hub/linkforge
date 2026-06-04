@@ -6,7 +6,7 @@
 
 ## 1. System Architecture Overview
 
-```mermaid
+```
 graph TB
     %% ========== External Users ==========
     subgraph "External Actors"
